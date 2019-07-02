@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Survey Form </title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+  
+  <body>
+    <main>
+      <div id="title-div">
+        <h1 id="title"> Survey Form </h1>
+      </div>
+
+      <div id="form-card">
+        <p id="description"> This is a survey form </p>
+        <form action="" id="survey-form">
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="name" id="name-label">* Name: </label>
+            </div>
+            <div class="right-content">
+              <input type="text" id="name" required placeholder="Insert your name...">  
+            </div>
+          </div>
+          
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="email" id="email-label">* Email: </label>
+            </div>
+            <div class="right-content">
+              <input type="email" id="email" required placeholder="Insert your email...">  
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="number" id="number-label"> Age: </label>
+            </div>
+            <div class="right-content">
+              <input type="number" min="18" max="99" id="number" placeholder="Age">
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="dropdown" id="dropdown-label"> Choose a color: </label>
+            </div>
+
+            <div class="right-content">
+              <select id="dropdown" name="currentPos" class="dropdown">
+                <option value="orange">Orange</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="radio" id="radio-label"> How are you feeling? </label>
+            </div>
+
+            <div class="right-content">
+                <div class="radio-buttons">
+                  <label>
+                    <input name="radio-buttons" value="sad" type="radio">
+                    Sad
+                  </label>
+                  <label>
+                    <input name="radio-buttons" value="angry" type="radio">
+                    Angry
+                  </label>
+                  <label>
+                    <input name="radio-buttons" value="happy" type="radio">
+                    Happy
+                  </label>
+                </div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="checkbox" id="checkbox-label"> Which of these sports do you like? 
+              </label>
+            </div>
+
+            <div class="right-content">
+                <div class="checkboxes">
+                  <label>
+                    <input name="check-buttons" value="soccer" type="checkbox">
+                    Soccer
+                  </label>
+                  <label>
+                    <input name="check-buttons" value="swimming" type="checkbox">
+                    Swimming
+                  </label>
+                  <label>
+                    <input name="check-buttons" value="basketball" type="checkbox">
+                    Basketball
+                  </label>
+                  <label>
+                    <input name="check-buttons" value="gymnastics" type="checkbox">
+                    Gymnastics
+                  </label>
+                </div>
+            </div>
+          </div>
+
+          <div class="tab-content">
+            <div class="left-content">
+              <label for="textarea" id="textarea-label"> Addional Comments
+              </label>
+            </div>
+            <div class="right-content">
+              <textarea placeholder="Insert your comments here"></textarea>
+            </div>
+          </div>
+
+          <button id="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
